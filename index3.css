@@ -1,0 +1,254 @@
+/* Reset Básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #005f6b;
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f0a500;
+}
+
+/* Banner */
+.banner {
+  background: url('https://images.unsplash.com/photo-1601597772287-7b2b9a12f8b9?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDg5fGNvbG9yZ3xlbnwwfHx8fDE2NjY4NjA2NzE&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center/cover;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+}
+
+
+
+.banner h2 {
+  color: #fff;
+  /* Branco */
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  color: #0d140133;
+
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+
+.banner button {
+  background-color: #f0a500;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.banner button:hover {
+  background-color: #ff8000;
+}
+
+/* Seções */
+.section {
+  padding: 60px 20px;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 36px;
+  color: #005f6b;
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section ul li {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.causes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.cause {
+  background-color: #e9f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cause h3 {
+  font-size: 24px;
+  color: #005f6b;
+  margin-bottom: 10px;
+}
+
+/* Onde Descartar */
+#onde-descartar {
+  background-color: #f0f9f9;
+  padding: 40px 20px;
+  margin-top: 40px;
+  border-radius: 8px;
+}
+
+#onde-descartar ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  text-align: left;
+}
+
+#onde-descartar ul li {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+#onde-descartar strong {
+  color: #005f6b;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .banner h2 {
+    font-size: 32px;
+  }
+
+  .banner p {
+    font-size: 18px;
+  }
+
+  .section h2 {
+    font-size: 30px;
+  }
+
+  .section p {
+    font-size: 16px;
+  }
+
+  .causes-list {
+    grid-template-columns: 1fr;
+  }
+
+  #onde-descartar ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Estilo do Footer */
+footer {
+  background-color: #005f6b;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer-links .quiz-link {
+  text-decoration: none;
+  color: #f0a500;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.footer-links .quiz-link:hover {
+  color: #ff8000;
+}
+
+.footer-social {
+  margin-top: 20px;
+}
+
+.footer-social .social-icon {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.footer-social .social-icon:hover {
+  color: #f0a500;
+}
+
+/* Responsividade para o Footer */
+@media (max-width: 768px) {
+  .footer-social {
+    margin-top: 15px;
+  }
+
+  .footer-quiz .quiz-icon {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
